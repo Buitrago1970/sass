@@ -1,0 +1,47 @@
+$font-titles: "Oswald", sans-serif;
+$font-text: "Lato", sans-serif;
+$color-primario: #333333;
+$background-color: #f1f1f1;
+$color-claro: #ffffff;
+$color-titles: #c952de;
+$color-variacion: #3f579a;
+$color-hover-btn: #4b4b4b;
+
+@mixin caja {
+  width: 65%;
+  border-radius: 20px;
+  margin: 25px auto;
+  box-shadow: 0px 20px 33px 0px rgba($color-primario, 0.5);
+  color: $color-primario;
+  background-color: $color-claro;
+}
+@mixin text($fuente) {
+  @if ($fuente == $font-titles) {
+    text-transform: uppercase;
+    color: $color-titles;
+  } @else {
+    color: getOpacity($color-variacion, 0.5);
+    font-family: $font-text;
+  }
+}
+@function getOpacity($color, $opacity) {
+  @return rgba($color, $opacity);
+}
+@each $name, $size in (h1: 3.5rem, h2: 2rem, h3: 1.8rem) {
+  #{$name} {
+    font-size: $size;
+    margin: 10px auto;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-titles;
+  background-color: $background-color;
+}
