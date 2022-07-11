@@ -5,7 +5,6 @@ export default function Layout(props) {
     <>
       <Navbar />
       {props.children}
-      <h1>s</h1>
     </>
   );
 }
