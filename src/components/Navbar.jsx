@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav>
-      <picture>😀</picture>
+      <p>PLATZI GAMES</p>
       <div className="links">
         <Link to="/" passHref>
           Home

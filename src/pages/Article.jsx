@@ -5,7 +5,7 @@ export default function () {
     <>
       <section class="intro">
         <div class="intro__imagen">
-          <img src="../../resources/images/intro.jpg" />
+          <img src={require("../resources/images/intro.jpg")} />
         </div>
         <div class="intro__contenido">
           <span class="intro__categoria">Noticias</span>
@@ -14,7 +14,7 @@ export default function () {
           </h1>
         </div>
         <div class="intro__autor">
-          <img src="../../resources/images/avatar.jpg" />
+          <img src={require("../resources/images/avatar.jpg")} />
           <span class="intro__autor-titulo">Autor</span>
           <span class="intro__autor-nombre">John Wick</span>
         </div>
@@ -57,7 +57,7 @@ export default function () {
       <section class="contenedor--cajas">
         <div class="caja">
           <div class="caja__imagen">
-            <img src="../../resources/images/xbox.jpg" />
+            <img src={require("../resources/images/xbox.jpg")} />
           </div>
           <div class="caja__contenido">
             <span class="caja__categoria">Xbox</span>
@@ -71,7 +71,7 @@ export default function () {
         </div>
         <div class="caja">
           <div class="caja__imagen">
-            <img src="../../resources/images/fortnite.jpg" />
+            <img src={require("../resources/images/fortnite.jpg")} />
           </div>
           <div class="caja__contenido">
             <span class="caja__categoria">Fortnite</span>
@@ -85,7 +85,7 @@ export default function () {
         </div>
         <div class="caja">
           <div class="caja__imagen">
-            <img src="../../resources/images/cuphead.jpg" />
+            <img src={require("../resources/images/cuphead.jpg")} />
           </div>
           <div class="caja__contenido">
             <span class="caja__categoria">Cuphead</span>

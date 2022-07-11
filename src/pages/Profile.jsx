@@ -5,7 +5,10 @@ export default function Profile() {
     <>
       <main>
         <section class="perfil">
-          <img class="perfil__avatar" src="../images/avatar.jpg" />
+          <img
+            class="perfil__avatar"
+            src={require("../resources/images/avatar.jpg")}
+          />
           <h2 class="perfil__nombre">John Wick</h2>
           <h3 class="perfil__titulo">Asesino Legendario</h3>
           <a class="perfil__boton" href="#">
@@ -84,11 +87,6 @@ export default function Profile() {
             </p>
           </div>
           <hr />
-          <footer>
-            <a href="https://juan-buitrago.netlify.app" target="_blank">
-              <h3 class="firma">🔗 By:Juan Buitrago</h3>
-            </a>
-          </footer>
         </aside>
       </main>
     </>

@@ -10,6 +10,11 @@ nav {
   box-shadow: rgba(255, 255, 255, 0.05) 0px 0px 0px 1px,
     rgb(209, 213, 219) 0px 0px 0px 1px outset;
   background-color: #1c1f20;
+  p {
+    color: $color-titles;
+    font-size: 2rem;
+    font-weight: bold;
+  }
 }
 .links {
   display: flex;

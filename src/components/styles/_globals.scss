@@ -62,3 +62,12 @@ hr {
   border: none;
   background: $color-titles;
 }
+footer {
+  text-align: center;
+  color: white;
+  background-color: #1c1f20;
+  padding: 5px;
+  a {
+    color: #f1f1f1;
+  }
+}
