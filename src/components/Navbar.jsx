@@ -16,7 +16,12 @@ export default function Navbar() {
           Article
         </Link>
       </div>
-      <div className="search">🔍</div>
+      <div
+        className="search"
+        onClick={() => alert("Estamos haciendo page buscar...")}
+      >
+        🔍
+      </div>
     </nav>
   );
 }
